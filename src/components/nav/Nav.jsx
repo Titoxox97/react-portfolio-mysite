@@ -8,6 +8,8 @@ import { BiMessageRoundedDots } from 'react-icons/bi'
 import { useState } from 'react'
 
 const Nav = () => {
+    // React hooks for onClick functionality and display of the icons
+
     const [activeNav, setActiveNav] = useState('#')
     return (
         <nav>
