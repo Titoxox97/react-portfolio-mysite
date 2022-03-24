@@ -3,7 +3,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { GrInstagram } from 'react-icons/gr'
 
-const headerSocials = () => {
+const Socials = () => {
     return (
         <div className="header__socials">
             <a href="http://linkedin.com" target="_blank"><BsLinkedin /></a>
@@ -15,4 +15,4 @@ const headerSocials = () => {
     )
 }
 
-export default headerSocials
+export default Socials
