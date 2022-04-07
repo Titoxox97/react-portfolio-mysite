@@ -29,14 +29,19 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
-    bottom: 3rem;
+    left: 20rem;
+    bottom: 8rem;
+    color: var(--color-primary);
+}
+
+.header_socials a {
+    color: var(--color-primary);
 }
 
 .header__socials::after {
     content: '';
     width: 1px;
-    height: 2rem;
+    height: 5rem;
     background: var(--color-primary);
 
 }
@@ -58,11 +63,12 @@ header {
 
 .scroll__down {
     position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
+    right: 20rem;
+    bottom: 15rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
+    color: var(--color-primary);
 }
 
 /* Media Queries (Medium Devices)*/
