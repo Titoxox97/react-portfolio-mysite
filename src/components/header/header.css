@@ -48,7 +48,6 @@ header {
 
 /* ME */
 .headShot {
-    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -63,7 +62,7 @@ header {
 
 .scroll__down {
     position: absolute;
-    right: 20rem;
+    right: 16rem;
     bottom: 15rem;
     transform: rotate(90deg);
     font-weight: 300;

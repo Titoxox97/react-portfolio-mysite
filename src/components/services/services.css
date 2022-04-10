@@ -38,6 +38,10 @@
     margin-bottom: 0.8rem;
 }
 
+.service_list a {
+    color: var(--color-primary);
+}
+
 .service_list-icon {
     color: var(--color-primary);
     margin-top: 2px;
