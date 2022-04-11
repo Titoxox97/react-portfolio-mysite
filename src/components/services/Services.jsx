@@ -13,8 +13,8 @@ import { FiCheck } from 'react-icons/fi'
 const Services = () => {
     return (
         <section id='services'>
-            <h5>Writing Samples</h5>
-            <h2>Diverse Writing Skills</h2>
+            <h5>(click titles to download) </h5>
+            <h2>Writing Samples</h2>
 
             <div className="container services_container">
                 <article className='service'>

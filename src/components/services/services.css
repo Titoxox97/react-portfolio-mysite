@@ -39,7 +39,7 @@
 }
 
 .service_list a {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .service_list-icon {
