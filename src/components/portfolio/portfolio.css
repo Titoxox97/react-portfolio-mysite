@@ -31,7 +31,12 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    align-items: center;
 }
+
+
+
+
 
 
 /* Media Queries - Tablets/Ipads display (Medium Devices)*/

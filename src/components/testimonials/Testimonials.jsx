@@ -24,7 +24,7 @@ const data = [
     {
         avatar: AVTR2,
         name: 'Crypto and Investment Management',
-        review: 'Growing up I was never taught anything about personal finances so when I finally took a personal finance course in college I became obsessed. I began managing my own investments and researching the stock market and cryptocurrency technology, that was four years ago and I havent looked back. More recently Ive began studying and investing in NFTs and the potential of blockchain technology on the financial landscape in the future.'
+        review: 'Growing up I was never taught anything about personal finances so when I finally took a personal finance course in college I started researching. I began managing my own investments and researching the stock market and cryptocurrency technology, that was four years ago and I havent looked back. More recently Ive began studying and investing in NFTs and the potential of blockchain technology on the financial landscape in the future.'
     },
     {
         avatar: AVTR3,
