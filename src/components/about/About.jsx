@@ -23,7 +23,7 @@ const About = () => {
                         <article className='about__card'>
                             <FaAward className='about__icon' />
                             <h5>Experience</h5>
-                            <small>Finance, Data Management, Research, Programming, Sales</small>
+                            <small>Finance, Data Management, Research, Programming,</small>
                         </article>
 
                         <article className='about__card'>
@@ -42,7 +42,7 @@ const About = () => {
 
                     <p>
                         Hi, I'm Matias, an ambitious self starter with a passion for finance and software development. In my spare time I enjoy reading, writing, playing videogames, practicing my programming skills, rock climbing, and managing my investments. <br /> <br />
-                        I went to Elon University where I earned my Bachelors of Science in Business Administration with a concentration in Finance and a minor in Spanish. During my time there I had the opportunity to study abroad in Japan, South Korea, and Barcelona, where I studied international economics and business culture. <br /> <br />
+                        I went to Elon University where I earned my Bachelors of Science in Business Administratioan with a concentration in Finance and a minor in Spanish. During my time there I had the opportunity to study abroad in Japan, South Korea, and Barcelona, where I studied international economics and business culture. <br /> <br />
                         My dream job is to work in finance innovation, I have a firm belief that we have barely scraped the surface of opportunities in the finance technology space and the way everyday individuals manage their money. 
 
                     </p>
