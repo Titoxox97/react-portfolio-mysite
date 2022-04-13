@@ -1,5 +1,5 @@
 import React from 'react'
-import './testimonials.css'
+import './interests.css'
 import AVTR1 from '../../assets/meSpain.jpg'
 import AVTR2 from '../../assets/meStonk.jpg'
 import AVTR3 from '../../assets/meBook.jpg'

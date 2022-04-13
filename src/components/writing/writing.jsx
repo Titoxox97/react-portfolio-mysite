@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.css'
+import './writing.css'
 import Orwell from '../../assets/Essay_orw.pdf'
 import Wulf from '../../assets/Essay_wulf.pdf'
 import Frank from '../../assets/Essay_frank.pdf'
