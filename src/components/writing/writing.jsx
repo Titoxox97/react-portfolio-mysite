@@ -49,16 +49,16 @@ const Services = () => {
                     </div>
 
                     <ul className='service_list'>
-                         <li>
+                        <li>
                             <FiCheck className='service_list-icon' />
                             <a href={Snap} download>The Visual Evolution of Communication</a>
                         </li>
                         <li>
-                        <FiCheck className='service_list-icon' />
+                            <FiCheck className='service_list-icon' />
                             <a href={Crypto} download>Facebook's Cryptocurrency Roadblock</a>
                         </li>
                         <li>
-                        <FiCheck className='service_list-icon' />
+                            <FiCheck className='service_list-icon' />
                             <a href={Trade} download>The Effects of the US-China Trade War on the EU</a>
                         </li>
                     </ul>
@@ -70,11 +70,11 @@ const Services = () => {
                     </div>
 
                     <ul className='service_list'>
-                    <li>
-                        <FiCheck className='service_list-icon' />
+                        <li>
+                            <FiCheck className='service_list-icon' />
                             <a href={Selfie} download>Los Selfies: Una Forma de Arte</a>
-                    </li>
-                     
+                        </li>
+
                     </ul>
                 </article>
             </div>
