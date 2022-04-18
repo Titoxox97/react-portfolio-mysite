@@ -29,7 +29,7 @@ const data = [
     {
         avatar: AVTR3,
         name: 'Writing',
-        review: 'I have begun a freelance side hustle where I can write articles, essays, short stories, and research papers for compensation. As a kid books werw a big part of my life and Ive always enjoyed putting my own words and ideas on paper. Ive always written for fun or for school, so I have decided to turn my writing skills into a service. I also enjoy writing and practicing my coding skills by working on different projects and continually self learning.'
+        review: 'I have begun a freelance side hustle where I can write articles, essays, short stories, and research papers for compensation. As a kid books were a big part of my life and Ive always enjoyed putting my own words and ideas on paper. Ive always written for fun or for school, so I have decided to turn my writing skills into a service. I also enjoy writing and practicing my coding skills by working on different projects and continually self learning.'
     },
     {
         avatar: AVTR4,
