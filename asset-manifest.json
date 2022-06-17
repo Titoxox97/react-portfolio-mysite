@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-portfolio-mysite/static/css/main.af4b173f.css",
-    "main.js": "/react-portfolio-mysite/static/js/main.0d5a0599.js",
+    "main.css": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css",
+    "main.js": "/react-portfolio-mysite/static/js/main.cab1a27b.js",
     "static/js/787.b9efc8e0.chunk.js": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js",
     "static/media/meBook.jpg": "/react-portfolio-mysite/static/media/meBook.4594536c25be3a9e8b4f.jpg",
     "static/media/meStonk.jpg": "/react-portfolio-mysite/static/media/meStonk.ab70b186e678b4c7a08c.jpg",
     "static/media/meSpain.jpg": "/react-portfolio-mysite/static/media/meSpain.3685d43533d2ec52949d.jpg",
-    "static/media/Headshot.jpg": "/react-portfolio-mysite/static/media/Headshot.09273df1705cc8c8e3ec.jpg",
     "static/media/meShanghai.jpg": "/react-portfolio-mysite/static/media/meShanghai.ac9db078b5d4d7cbb714.jpg",
     "static/media/SS-BookEng.png": "/react-portfolio-mysite/static/media/SS-BookEng.a44dbe31bcecfb1ce749.png",
     "static/media/meChina.jpg": "/react-portfolio-mysite/static/media/meChina.fb09b202feaaffbd9274.jpg",
     "static/media/SS-DateApp.png": "/react-portfolio-mysite/static/media/SS-DateApp.dc0ab9caae6a9f09b7bd.png",
+    "static/media/Candid.jpg": "/react-portfolio-mysite/static/media/Candid.440656517f470e9323dd.jpg",
     "static/media/SS-WorkSched.png": "/react-portfolio-mysite/static/media/SS-WorkSched.d94186ca98908fa792b2.png",
     "static/media/SS-PwGen.png": "/react-portfolio-mysite/static/media/SS-PwGen.2c09b13e8c88c5f4e9bf.png",
     "static/media/SS-NoteTake.png": "/react-portfolio-mysite/static/media/SS-NoteTake.5a78d3d5608d54171700.png",
@@ -26,12 +26,12 @@
     "static/media/Essay_rebecca.pdf": "/react-portfolio-mysite/static/media/Essay_rebecca.499b196c9a86698e7f3e.pdf",
     "static/media/Essay_selfie.pdf": "/react-portfolio-mysite/static/media/Essay_selfie.ea42b3aed6d902b051ba.pdf",
     "index.html": "/react-portfolio-mysite/index.html",
-    "main.af4b173f.css.map": "/react-portfolio-mysite/static/css/main.af4b173f.css.map",
-    "main.0d5a0599.js.map": "/react-portfolio-mysite/static/js/main.0d5a0599.js.map",
+    "main.fd5f7cc2.css.map": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css.map",
+    "main.cab1a27b.js.map": "/react-portfolio-mysite/static/js/main.cab1a27b.js.map",
     "787.b9efc8e0.chunk.js.map": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af4b173f.css",
-    "static/js/main.0d5a0599.js"
+    "static/css/main.fd5f7cc2.css",
+    "static/js/main.cab1a27b.js"
   ]
 }
