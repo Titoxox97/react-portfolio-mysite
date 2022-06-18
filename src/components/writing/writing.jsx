@@ -8,6 +8,9 @@ import Snap from '../../assets/Essay_snap.pdf'
 import Crypto from '../../assets/Essay_crypto.pdf'
 import Trade from '../../assets/Essay_trade.pdf'
 import Selfie from '../../assets/Essay_selfie.pdf'
+import Infierno from '../../assets/infierno_essay'
+import Japan from '../../assets/Japan-Globaliz_Essay'
+import Cubano from '../../assets/Cubano_essay'
 import { FiCheck } from 'react-icons/fi'
 
 const Services = () => {
@@ -39,6 +42,7 @@ const Services = () => {
                             <FiCheck className='service_list-icon' />
                             <a href={Rebecca} download>The Loyal Maid and the Selfish Husband</a>
                         </li>
+
                     </ul>
                 </article>
                 {/* End of Novel Essays collumn */}
@@ -61,6 +65,10 @@ const Services = () => {
                             <FiCheck className='service_list-icon' />
                             <a href={Trade} download>The Effects of the US-China Trade War on the EU</a>
                         </li>
+                        <li>
+                            <FiCheck className='service_list-icon' />
+                            <a href={Japan} download>Globalization and its Effect on Japan and South Korea</a>
+                        </li>
                     </ul>
                 </article>
                 {/* End of Web Development collumn */}
@@ -73,6 +81,14 @@ const Services = () => {
                         <li>
                             <FiCheck className='service_list-icon' />
                             <a href={Selfie} download>Los Selfies: Una Forma de Arte</a>
+                        </li>
+                        <li>
+                            <FiCheck className='service_list-icon' />
+                            <a href={Infierno} download>En el Nombre del Padre, Hijo, y del Espiritu Santo</a>
+                        </li>
+                        <li>
+                            <FiCheck className='service_list-icon' />
+                            <a href={Cubano} download>El Precio de los Sueños</a>
                         </li>
 
                     </ul>
