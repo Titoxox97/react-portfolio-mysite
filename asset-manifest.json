@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css",
-    "main.js": "/react-portfolio-mysite/static/js/main.cab1a27b.js",
+    "main.js": "/react-portfolio-mysite/static/js/main.69e8926a.js",
     "static/js/787.b9efc8e0.chunk.js": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js",
     "static/media/meBook.jpg": "/react-portfolio-mysite/static/media/meBook.4594536c25be3a9e8b4f.jpg",
     "static/media/meStonk.jpg": "/react-portfolio-mysite/static/media/meStonk.ab70b186e678b4c7a08c.jpg",
@@ -18,20 +18,23 @@
     "static/media/Essay_wulf.pdf": "/react-portfolio-mysite/static/media/Essay_wulf.8e857c5767e719c0138f.pdf",
     "static/media/Essay_trade.pdf": "/react-portfolio-mysite/static/media/Essay_trade.49031c847f82b5a122ce.pdf",
     "static/media/SS-BudgTrack.png": "/react-portfolio-mysite/static/media/SS-BudgTrack.a73348ae914c24b38248.png",
+    "static/media/Essay_globJapan.pdf": "/react-portfolio-mysite/static/media/Essay_globJapan.d27b739c7e375ea38cb3.pdf",
     "static/media/Essay_frank.pdf": "/react-portfolio-mysite/static/media/Essay_frank.ee9659ff809983105c78.pdf",
     "static/media/cv.pdf": "/react-portfolio-mysite/static/media/cv.b67772558b50bbc3e7f2.pdf",
     "static/media/Essay_crypto.pdf": "/react-portfolio-mysite/static/media/Essay_crypto.b81f64809533be41900c.pdf",
     "static/media/Essay_orw.pdf": "/react-portfolio-mysite/static/media/Essay_orw.9f498d01720f56192b13.pdf",
+    "static/media/Cubano_essay.pdf": "/react-portfolio-mysite/static/media/Cubano_essay.2c7e71a8c0addbd1f6fe.pdf",
     "static/media/Essay_snap.pdf": "/react-portfolio-mysite/static/media/Essay_snap.4b3f605ac84638a2529f.pdf",
+    "static/media/Essay_inf.pdf": "/react-portfolio-mysite/static/media/Essay_inf.7d89cdf41a5d63eca5d6.pdf",
     "static/media/Essay_rebecca.pdf": "/react-portfolio-mysite/static/media/Essay_rebecca.499b196c9a86698e7f3e.pdf",
     "static/media/Essay_selfie.pdf": "/react-portfolio-mysite/static/media/Essay_selfie.ea42b3aed6d902b051ba.pdf",
     "index.html": "/react-portfolio-mysite/index.html",
     "main.fd5f7cc2.css.map": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css.map",
-    "main.cab1a27b.js.map": "/react-portfolio-mysite/static/js/main.cab1a27b.js.map",
+    "main.69e8926a.js.map": "/react-portfolio-mysite/static/js/main.69e8926a.js.map",
     "787.b9efc8e0.chunk.js.map": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd5f7cc2.css",
-    "static/js/main.cab1a27b.js"
+    "static/js/main.69e8926a.js"
   ]
 }
