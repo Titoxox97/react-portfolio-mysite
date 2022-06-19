@@ -8,9 +8,9 @@ import Snap from '../../assets/Essay_snap.pdf'
 import Crypto from '../../assets/Essay_crypto.pdf'
 import Trade from '../../assets/Essay_trade.pdf'
 import Selfie from '../../assets/Essay_selfie.pdf'
-import Infierno from '../../assets/Essay_infierno'
-import Japan from '../../assets/Japan-Globaliz-Essay'
-import Cubano from '../../assets/Cubano_essay'
+import Infierno from '../../assets/Essay_inf.pdf'
+import Japan from '../../assets/Essay_globJapan.pdf'
+import Cubano from '../../assets/Cubano_essay.pdf'
 import { FiCheck } from 'react-icons/fi'
 
 const Services = () => {
