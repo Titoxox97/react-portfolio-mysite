@@ -30,7 +30,7 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 20rem;
-    bottom: 8rem;
+    bottom: 3rem;
     color: var(--color-primary);
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 /* ME */
-.headShot {
+.headShot img{
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -63,7 +63,7 @@ header {
 .scroll__down {
     position: absolute;
     right: 16rem;
-    bottom: 15rem;
+    bottom: 10rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 1.5rem;
@@ -76,17 +76,20 @@ header {
 header {
     height: 68vh;
 }
+
 }
 
 
 /* Media Queries (Small Devices)*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
 header {
     height: 100vh;
 }
-.header__socials,
 .scroll__down {
     display: none
+}
+.header_socials {
+    display: none;
 }
 }
