@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css",
-    "main.js": "/react-portfolio-mysite/static/js/main.69e8926a.js",
+    "main.css": "/react-portfolio-mysite/static/css/main.4d01f81a.css",
+    "main.js": "/react-portfolio-mysite/static/js/main.356e07f9.js",
     "static/js/787.b9efc8e0.chunk.js": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js",
     "static/media/meBook.jpg": "/react-portfolio-mysite/static/media/meBook.4594536c25be3a9e8b4f.jpg",
     "static/media/meStonk.jpg": "/react-portfolio-mysite/static/media/meStonk.ab70b186e678b4c7a08c.jpg",
@@ -10,12 +10,12 @@
     "static/media/SS-BookEng.png": "/react-portfolio-mysite/static/media/SS-BookEng.a44dbe31bcecfb1ce749.png",
     "static/media/meChina.jpg": "/react-portfolio-mysite/static/media/meChina.fb09b202feaaffbd9274.jpg",
     "static/media/SS-DateApp.png": "/react-portfolio-mysite/static/media/SS-DateApp.dc0ab9caae6a9f09b7bd.png",
-    "static/media/Candid.jpg": "/react-portfolio-mysite/static/media/Candid.440656517f470e9323dd.jpg",
     "static/media/SS-WorkSched.png": "/react-portfolio-mysite/static/media/SS-WorkSched.d94186ca98908fa792b2.png",
     "static/media/SS-PwGen.png": "/react-portfolio-mysite/static/media/SS-PwGen.2c09b13e8c88c5f4e9bf.png",
     "static/media/SS-NoteTake.png": "/react-portfolio-mysite/static/media/SS-NoteTake.5a78d3d5608d54171700.png",
     "static/media/SS-CodeQuiz.png": "/react-portfolio-mysite/static/media/SS-CodeQuiz.02f1320d031e3c666169.png",
     "static/media/Essay_wulf.pdf": "/react-portfolio-mysite/static/media/Essay_wulf.8e857c5767e719c0138f.pdf",
+    "static/media/Headshot2.jpeg": "/react-portfolio-mysite/static/media/Headshot2.ca06d83f338cc12b54e9.jpeg",
     "static/media/Essay_trade.pdf": "/react-portfolio-mysite/static/media/Essay_trade.49031c847f82b5a122ce.pdf",
     "static/media/SS-BudgTrack.png": "/react-portfolio-mysite/static/media/SS-BudgTrack.a73348ae914c24b38248.png",
     "static/media/Essay_globJapan.pdf": "/react-portfolio-mysite/static/media/Essay_globJapan.d27b739c7e375ea38cb3.pdf",
@@ -29,12 +29,12 @@
     "static/media/Essay_rebecca.pdf": "/react-portfolio-mysite/static/media/Essay_rebecca.499b196c9a86698e7f3e.pdf",
     "static/media/Essay_selfie.pdf": "/react-portfolio-mysite/static/media/Essay_selfie.ea42b3aed6d902b051ba.pdf",
     "index.html": "/react-portfolio-mysite/index.html",
-    "main.fd5f7cc2.css.map": "/react-portfolio-mysite/static/css/main.fd5f7cc2.css.map",
-    "main.69e8926a.js.map": "/react-portfolio-mysite/static/js/main.69e8926a.js.map",
+    "main.4d01f81a.css.map": "/react-portfolio-mysite/static/css/main.4d01f81a.css.map",
+    "main.356e07f9.js.map": "/react-portfolio-mysite/static/js/main.356e07f9.js.map",
     "787.b9efc8e0.chunk.js.map": "/react-portfolio-mysite/static/js/787.b9efc8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd5f7cc2.css",
-    "static/js/main.69e8926a.js"
+    "static/css/main.4d01f81a.css",
+    "static/js/main.356e07f9.js"
   ]
 }
