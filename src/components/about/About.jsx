@@ -14,7 +14,7 @@ const About = () => {
             <div className='container about__container'>
                 <div className='about__me'>
                     <div className='about__me-image'>
-                        <img src={ME} alt="about image" />
+                        <img src={ME} alt="A handsome bastard" />
                     </div>
                 </div>
 
@@ -23,7 +23,7 @@ const About = () => {
                         <article className='about__card'>
                             <FaAward className='about__icon' />
                             <h5>Experience</h5>
-                            <small>Finance, Data Management, Research, Programming, Sales</small>
+                            <small>Finance, Data Management, Research, Programming, Sales, Payroll</small>
                         </article>
 
                         <article className='about__card'>
@@ -36,15 +36,16 @@ const About = () => {
                         <article className='about__card'>
                             <VscFolder className='about__icon' />
                             <h5>Projects</h5>
-                            <small>30+ Completed</small>
+                            <small>JS, React, HTML, CSS, Python, Pandas</small>
                         </article>
 
                     </div>
 
                     <p>
-                        Hi, I'm Matias, an ambitious self starter with a passion for finance and software development. In my spare time I enjoy reading, writing, playing videogames, practicing my programming skills, rock climbing, and managing my investments. <br /> <br />
-                        I went to Elon University where I earned my Bachelors of Science in Business Administratioan with a concentration in Finance and a minor in Spanish. During my time there I had the opportunity to study abroad in Japan, South Korea, and Barcelona, where I studied international economics and business culture. <br /> <br />
-                        I am hoping to use the skills I have learned, in finance, software development and data analysis, to bring value to a firm with long term vision and ambition.
+                    Senior payroll analyst leveraging a background in finance and sales, to create data driven solutions to minimize expenses and improve efficiency. Assisted managers with the implementation of new technologies to ease the transition to a paperless environment. <br></br> 
+                    Additionally, I currently work as a teaching assistant for a full-stack web development program through the University of Carolina in Chapel Hill, where I assist students in developing knowledge and experience building web-pages and applications using HTML5, CSS, Bootstrap, JavaScript, JQuery as well as Python and MySQL.<br></br>
+                    A passionate individual, capable of working well with others while strategizing solutions in a high stress environment, and able to balance multiple projects at once. Looking to bring my meticulous analytical skills and strategic mindset to a company, in order to grow and become a valuable asset.
+
                     </p>
 
                     <a href='#contact' className='btn btn-primary'>Message Me</a>

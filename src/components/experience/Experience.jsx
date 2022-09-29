@@ -10,7 +10,7 @@ const Experience = () => {
 
             <div className='container experience_container'>
                 <div className='experience_frontend'>
-                    <h3>Technologies</h3>
+                    <h3>Technical Skills</h3>
                     <div className='experience_content'>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
@@ -80,12 +80,24 @@ const Experience = () => {
                             <BsPatchCheckFill className='experience_details-icon' />
                             <h4>ExpressJs</h4>
                         </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Python</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Pandas</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Linux/Unix</h4>
+                        </article>
                     </div>
                 </div>
 
                 {/* Beginning of Backend */}
                 <div className='"experience_backend'>
-                    <h3>Business Skills</h3>
+                    <h3>Soft Skills</h3>
                     <div className='experience_content'>
                         
                         <article className='experience_details'>
@@ -98,7 +110,7 @@ const Experience = () => {
                         </article>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
-                            <h4>Communication</h4>
+                            <h4>Leadership</h4>
                         </article>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
@@ -106,7 +118,15 @@ const Experience = () => {
                         </article>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Data Entry</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
                             <h4>Research/Reporting</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Excel/Access</h4>
                         </article>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
@@ -114,9 +134,28 @@ const Experience = () => {
                         </article>
                         <article className='experience_details'>
                             <BsPatchCheckFill className='experience_details-icon' />
-                            <h4>Presentation Skills</h4>
+                            <h4>Communication</h4>
                         </article>
-                        
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Public Speaking</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Adult Education</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Project Management</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Time Management</h4>
+                        </article>
+                        <article className='experience_details'>
+                            <BsPatchCheckFill className='experience_details-icon' />
+                            <h4>Business Process Improvement</h4>
+                        </article>
 
                     </div>
                 </div>

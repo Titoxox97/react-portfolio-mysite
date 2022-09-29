@@ -24,6 +24,7 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+    gap: 1.5rem;
 }
 
 .about__me-image:hover {
