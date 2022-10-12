@@ -82,11 +82,11 @@
 
    .about__me {
        width: 50%;
-       margin: 2rem auto 4rem;
+       margin: 4rem auto 4rem;
    }
 
    .about__content p {
-       margin: 1rem 0 1.5rem;
+       margin: 1rem 0 1rem;
    }
     }
     
@@ -109,6 +109,6 @@
         }
 
         .about__content p {
-            margin: 1.5rem 0;
+            margin: 0rem 0;
         }
     }
