@@ -23,7 +23,7 @@
 
   --container-widdth-lg: 75%;
   --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-sm: 100%;
 }
 
 
@@ -32,7 +32,7 @@ scroll-behavior: smooth;
 
 }
 
-::-webkit-scrollbar {
+:-webkit-scrollbar {
   display: none;
 }
 
