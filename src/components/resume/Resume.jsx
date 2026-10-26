@@ -6,6 +6,7 @@ import { HiOutlineDocumentText } from 'react-icons/hi'
 
 const HIGHLIGHTS = [
     { k: 'Manhattan Institute', v: 'Data & Software Engineer, 2024 to present' },
+    { k: 'Compact Magazine', v: 'Web developer on contract, 2025 to present' },
     { k: 'LS Direct Marketing', v: 'Financial Analyst, reporting to the CFO' },
     { k: 'Compass Group', v: 'Senior Payroll Analyst' },
     { k: 'Elon University', v: 'B.S. Finance, minor in Spanish' },
