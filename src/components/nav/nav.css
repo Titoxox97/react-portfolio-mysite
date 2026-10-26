@@ -1,33 +1,77 @@
 nav {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.35);
     width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
+    max-width: calc(100vw - 2rem);
+    padding: 0.6rem 1rem;
+    z-index: 20;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 1.6rem;
     display: flex;
-    gap: 0.8rem;
+    gap: 0.4rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    border: 1px solid var(--color-line);
 }
 
 nav a {
-background: transparent;
-padding: 0.9rem;
-border-radius: 50%;
-display: flex;
-color: var(--color-light);
-font-size: 1.1rem;
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.05rem;
+    position: relative;
+    transition: var(--transition-fast);
 }
 
 nav a:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--color-white);
 }
 
 nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+/* Label on hover. The old nav was icons only, with no way to tell
+   what any of them pointed at. */
+.nav_tip {
+    position: absolute;
+    bottom: calc(100% + 0.55rem);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: var(--color-bg-deep);
+    color: var(--color-white);
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--color-line);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-fast);
+}
+
+nav a:hover .nav_tip,
+nav a:focus-visible .nav_tip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        gap: 0.1rem;
+        padding: 0.5rem 0.7rem;
+    }
+    nav a {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+    .nav_tip {
+        display: none;
+    }
 }

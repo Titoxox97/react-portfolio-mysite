@@ -1,24 +1,34 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
-import { RiMessengerLine } from 'react-icons/ri'
-import { ImWhatsapp } from 'react-icons/im'
-import { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import { FiPhone } from 'react-icons/fi'
+import emailjs from '@emailjs/browser'
+import { PROFILE } from '../../data/site'
 
-
-
+const SERVICE_ID = 'service_xjo2nxh'
+const TEMPLATE_ID = 'template_jqqgy45'
+const PUBLIC_KEY = 'oIhxjHI-4xFtPuBRn'
 
 const Contact = () => {
-    const form = useRef();
+    const form = useRef()
+    const [status, setStatus] = useState({ state: 'idle', message: '' })
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const sendEmail = async (e) => {
+        e.preventDefault()
+        setStatus({ state: 'sending', message: 'Sending...' })
 
-        emailjs.sendForm('service_xjo2nxh', 'template_jqqgy45', form.current, 'oIhxjHI-4xFtPuBRn')
+        try {
+            await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+            setStatus({ state: 'sent', message: 'Thanks. Your message is on its way.' })
+            form.current.reset()
+        } catch (err) {
+            setStatus({
+                state: 'error',
+                message: `Something went wrong. Email me directly at ${PROFILE.email}.`,
+            })
+        }
+    }
 
-        e.target.reset()
-    };
     return (
         <section id='contact'>
             <h5>Get In Touch</h5>
@@ -26,29 +36,42 @@ const Contact = () => {
 
             <div className='container contact_container'>
                 <div className='contact_options'>
-                    <article className='contact_option'>
+                    <article className='contact_option card'>
                         <MdOutlineEmail className='contact_option-icon' />
                         <h4>Email</h4>
-                        <a href="mailto:matiasahrensdorf@gmail.com" target="_blank">Send a message</a>
+                        <h5>{PROFILE.email}</h5>
+                        <a href={`mailto:${PROFILE.email}`}>Send a message</a>
                     </article>
-                    <article className='contact_option'>
-                        <RiMessengerLine className='contact_option-icon' />
-                        <h4>Messenger</h4>
-                        <a href="https://m.me/matias.ahrensdorf.1/" target="_blank">Send a message</a>
-                    </article>
-                    <article className='contact_option'>
-                        <ImWhatsapp className='contact_option-icon' />
-                        <h4>WhatsApp</h4>
-                        <a href="https://api.whatsapp.com/send?phone=+17045752724" target="_blank">Send a message</a>
+
+
+                    <article className='contact_option card'>
+                        <FiPhone className='contact_option-icon' />
+                        <h4>Phone</h4>
+                        <h5>704-575-2724</h5>
+                        <a href={`tel:${PROFILE.phone}`}>Call or text</a>
                     </article>
                 </div>
 
-                {/* End of Contact Options */}
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='Your Full Name' required />
-                    <input type="email" name='email' placeholder='Your Email' required />
-                    <textarea name="message" rows='7' placeholder='Your message' required></textarea>
-                    <button type='submit' className='btn btn-primary'>Send Message</button>
+                <form ref={form} onSubmit={sendEmail} noValidate={false}>
+                    <input type='text' name='name' placeholder='Your full name' required />
+                    <input type='email' name='email' placeholder='Your email' required />
+                    <textarea name='message' rows='7' placeholder='Your message' required></textarea>
+
+                    <button
+                        type='submit'
+                        className='btn btn-primary'
+                        disabled={status.state === 'sending'}
+                    >
+                        {status.state === 'sending' ? 'Sending...' : 'Send Message'}
+                    </button>
+
+                    <p
+                        className={`contact_status contact_status--${status.state}`}
+                        role='status'
+                        aria-live='polite'
+                    >
+                        {status.message}
+                    </p>
                 </form>
             </div>
         </section>

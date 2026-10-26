@@ -1,14 +1,15 @@
 .about__container {
     display: grid;
-    grid-template-columns: 28% 50%;
-    gap: 15%;
-
+    grid-template-columns: 30% 1fr;
+    gap: 4.5rem;
+    align-items: start;
 }
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/4;
     border-radius: 2rem;
+    overflow: hidden;
     background: linear-gradient(
         45deg,
         transparent,
@@ -22,7 +23,7 @@
 .about__me-image {
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(6deg) scale(1.08);
     transition: var(--transition);
     gap: 1.5rem;
 }
@@ -68,8 +69,13 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 1.1rem 0 0;
     color: var(--color-light);
+    font-size: 0.95rem;
+}
+
+.about__content .btn {
+    margin-top: 1.6rem;
 }
 
 /* Media Queries (Medium Devices)*/
@@ -81,12 +87,12 @@
    }
 
    .about__me {
-       width: 50%;
-       margin: 4rem auto 4rem;
+       width: 46%;
+       margin: 0 auto 2rem;
    }
 
    .about__content p {
-       margin: 1rem 0 1rem;
+       margin: 0.9rem 0 0;
    }
     }
     
@@ -95,8 +101,8 @@
     
     @media screen and (max-width: 600px) {
         .about__me {
-            width: 65%;
-            margin: 0 auto 3rem;
+            width: 62%;
+            margin: 0 auto 1.6rem;
         }
 
         .about__cards {
@@ -109,6 +115,7 @@
         }
 
         .about__content p {
-            margin: 0rem 0;
+            margin: 0.8rem 0 0;
+            text-align: left;
         }
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono:wght@300;400&display=swap');
 
 * {
   margin: 0;
@@ -18,22 +18,38 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
---transition: all 400ms ease;
+  /* Derived tokens. Same palette, a few extra steps for depth. */
+  --color-bg-deep: #2e2d2d;
+  --color-card: rgba(110, 110, 110, 0.55);
+  --color-card-hover: rgba(110, 110, 110, 0.18);
+  --color-line: rgba(255, 255, 255, 0.10);
+  --color-primary-soft: rgba(28, 226, 183, 0.12);
 
+  --transition: all 400ms ease;
+  --transition-fast: all 200ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
 
-
 html {
-scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
-:-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-variant);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
 }
 
 body {
@@ -41,9 +57,8 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png)
+  background-image: url(../src/assets/bg-texture.png);
 }
-
 
 /* General Styles */
 .container {
@@ -51,7 +66,7 @@ body {
   margin: 0 auto;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 h1 {
@@ -59,17 +74,29 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 5rem;
+  scroll-margin-top: 3rem;
 }
 
-section > h2, section > h5 {
+/* Alternating bands break up the rhythm of six identically-built sections.
+   Semi-transparent rather than solid so the body texture still shows. */
+section:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.16);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+section > h2,
+section > h5 {
   text-align: center;
   color: var(--color-light);
 }
 
 section > h2 {
   color: var(--color-primary);
-  margin-bottom: 3rem;;
+  margin-bottom: 2rem;
 }
 
 .text-light {
@@ -77,6 +104,10 @@ section > h2 {
   transition: var(--transition);
 }
 
+a {
+  color: var(--color-primary);
+  transition: var(--transition-fast);
+}
 
 a:hover {
   color: var(--color-white);
@@ -91,15 +122,24 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  font-family: inherit;
+  font-size: 1rem;
+  background: transparent;
 }
 
 .btn:hover {
   background: var(--color-white);
   border-color: transparent;
+  color: var(--color-bg);
 }
 
 .btn-primary {
   background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background: var(--color-white);
   color: var(--color-bg);
 }
 
@@ -109,29 +149,87 @@ img {
   object-fit: cover;
 }
 
+/* Shared card treatment, matching the original about/portfolio cards */
+.card {
+  background: var(--color-card);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
 
-/* Media Queries */
+.card:hover {
+  background: var(--color-card-hover);
+  border-color: var(--color-primary-variant);
+}
 
+/* Visible keyboard focus. The original reset removed outlines entirely. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
   .container {
-    width: var(--container-width-md)
+    width: var(--container-width-md);
   }
-
   section {
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 }
 
-
-
-/* Media Queries (small devices) */
-
+/* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-sm)
+    width: var(--container-width-sm);
   }
-
   section {
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Entrance motion. Applied by App.jsx via IntersectionObserver.
+   Elements start visible and are only hidden once JS takes over,
+   so a failed script can never leave the page blank. */
+@media (prefers-reduced-motion: no-preference) {
+  .js-reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 600ms cubic-bezier(0.2, 0.6, 0.2, 1),
+                transform 600ms cubic-bezier(0.2, 0.6, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  .js-reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
